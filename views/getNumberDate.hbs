@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>get Number</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="/style/styleNumberArr.css">
+    </head>
+    <body>
+    <h1 style="margin: 25px;"> Запрос числовых данных</h1>
+    <i style="font: 15px; margin: 10px; "> Если вы введете не числовое значение или не укажите его вовсе, значение станет: 0</i>
+      <div class="formNumber">
+    <form method="post">
+      <input class="num" type='text' name="first"> </input>
+      <input class="num" type='text' name="second"> </input>
+      <input class="num" type='text' name="third"> </input>
+      <input class="num" type='text' name="fourth"> </input>
+      <input class="num" type='text' name="fifth"> </input>
+      <input class="num" type='text' name="sixth"> </input>
+      <input class="btnForm" type='submit'> </input>
+    </form>
+  </div>
+    <h1 style="margin: 20px;"> Все входные данные</h1>
+  <div class="sortedAr">
+    {{#each allNumber}}
+    <h5 style="margin: 2px">№{{this.id}}</h5>
+    <div style="display: inline-block; margin: 5px" class="arr">[{{this.first}}, {{this.second}}, {{this.third}}, {{this.fourth}}, {{this.fifth}}, {{this.sixth}}]</div>
+    <input class='sortedButton' type='button' value="отсортировать"></input> 
+   {{/each}}
+  </div>
+  <script src="/javaScript/getSortedArr.js"></script>
+  </body>
+</html>

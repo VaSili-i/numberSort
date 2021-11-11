@@ -1,0 +1,36 @@
+.formNumber{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: dashed 2px teal;
+  padding: 5px;
+  height: 100px;
+  width: 700px;
+  
+}
+.num{
+  position: relative;
+  left: 60px;
+
+  width: 30px;
+  margin: 2px;
+}
+.btnForm{
+  position: relative;
+  left: 50px;
+  margin: 8px;
+  border-radius: 5px;
+
+}
+.sortedButton{
+  
+  left: 140px;
+
+  border-radius: 5px;
+}
+.sortedAr{
+  margin: 10px;
+  border: dotted; 3px red;
+  width: 700px;
+  padding: 10px;
+}
